@@ -1,0 +1,50 @@
+# ROS 2 / colcon build output
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+build/
+install/
+log/
+
+# External repos cloned into the workspace (px4_msgs, px4_ros_com, etc.)
+# Track them via a .repos file instead of committing their code
+ros2_ws/src/px4_msgs/
+ros2_ws/src/px4_ros_com/
+
+# C++ / CMake
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+*.o
+*.so
+*.a
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logs and recordings (large files)
+*.ulg
+rosbag2_*/
+*.mcap
+*.db3
+
+# Scenario runner output
+scenarios/results/
+
+# Unreal Engine
+unreal/**/Binaries/
+unreal/**/Intermediate/
+unreal/**/Saved/
+unreal/**/DerivedDataCache/
+*.sln
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Secrets
+.env
